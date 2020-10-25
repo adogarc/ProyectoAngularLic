@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Generador de Formularios.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Creador de formularios web">
+    <meta name="author" content="Universidad Don Bosco">
+    <link rel="icon" href="src/favicon.png">
+    <link rel="stylesheet" href="home.component.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,400&display=swap"  rel="stylesheet">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Generador de Formularios Online</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/inicio']">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info_forms">¿Qué son los formularios web?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactanos">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" [routerLink]="['/menu-formulario']">Crear formulario</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--/NAVBAR-->
+
+    <!--HEADER-->
+    <header id="header">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header-content-left">
+                        <img src="assets/images/home_image.png" style="width: 100%;" alt="Crea tus formularios">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="header-content-right">
+                        <h1 class="display-4">¡Crea tus propios formularios!</h1>
+                        <p class="mt-5">Bienvenido a nuestra página, con esta página puedes crear formularios web online
+                            de manera fácil, rápida y sencilla. Para iniciar
+                            solo debes presionar el botón "Crea tu formulario" y listo.
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary btn-lg mt-4">Crear formulario</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/HEADER-->
+        <!-- ¿Que son los formularios web?-->
+        <section id="info_forms">
+            <div class="container">
+                <p class="h4">Características de un formulario en línea</p>
+                <p class="mb-2">Si quieres información de alguien, simplemente se la pides, ¿cierto? Si es un extraño,
+                    puedes comenzar con una pequeña charla, un comentario sobre el clima o incluso un cumplido. Pero,
+                    ¿qué sucede cuando no quieres preguntar solo a una persona, sino a 10, 100, 1000 personas?
+                    ‘Simplemente preguntar’ de repente no parece tan fácil.
+                    Saber cómo crear un formulario en línea es importante para comenzar a preguntar a escala y es que no
+                    es tan fácil hacer un formulario web.
+                    No hay que olvidar que los usuarios que lo completan son seres humanos y merecen que se les facilite
+                    el proceso de darte su información, como lo hace alguien cuando hablas con él cara a cara.
+                </p>
+            </div>
+        </section>
+
+        <section id="info_forms2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 my-auto">
+                        <div class="info-left">
+                            <h2>¿Qué es un formulario?</h2>
+                            <p>Los formularios están a nuestro alrededor, sirven para recopilar información de los seres
+                                humanos de todo
+                                el mundo y convertirla en acciones. Pero, ¿qué significa formulario? Según la RAE, el
+                                formulario es un “libro o escrito en que se contienen fórmulas que
+                                se han de observar para la petición, expedición o ejecución de algo”. Por lo tanto, ¿te
+                                registraste para un evento recientemente? Entonces tuviste que llenar un formulario en
+                                línea.
+                                ¿Sacaste algo de dinero del cajero automático esta mañana? Sí, eso también era un
+                                formulario, y lo mismo ocurre con los formularios que se rellenan para correos o con los
+                                formularios
+                                de contacto que se pueden completar en las webs de algunas grandes compañías.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-rigth">
+                            <img src="assets/images/infoimg.png" style="width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- /¿Que son los formularios web?-->
+<!--Prueba de componentes-->
+
+    <!--CONTACTANOS-->
+    <footer id="contactanos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <form class="card mt-4">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea cols="30" rows="10" placeholder="Escribe aqui tu comentario"
+                                    class="form-control"></textarea>
+                            </div>
+                            <button class="btn btn-outline-secondary btn-block">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer">
+            <div class="footer-copyright text-center py-3" style="color:whitesmoke;">© 2020 Copyright
+                <a href="http://www.udb.edu.sv/udb/" style="color: #21A179;"> Universidad Don Bosco</a>
+            </div >
+        </div> 
+    </footer>
+             <!--/CONTACTANOS--> 
+             <!--JS-->
+            <script>
+                window.sr = ScrollReveal();
+          
+              sr.reveal('.navbar', {
+                duration: 2000,
+                origin: 'bottom'
+              });
+          
+              sr.reveal('.header-content-left', {
+                duration: 2000,
+                origin: 'top',
+                distance: '300px'
+              });
+          
+              sr.reveal('.header-content-right', {
+                duration: 2000,
+                origin: 'right',
+                distance: '300px'
+              });
+                      
+              sr.reveal('#info_forms div', {
+                duration: 2000,
+                origin: 'left',
+                distance: '300px',
+                viewFactor: 0.2
+              });
+          
+              document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                  e.preventDefault();
+          
+                  document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                  });
+                });
+              });
+              </script>
+
+</body>
+
+</html>

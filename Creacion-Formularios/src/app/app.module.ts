@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import{routing,appRoutingProviders} from './app.routing';
+import {FormsModule} from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -9,7 +10,8 @@ import { FormularioDesde0Component } from './components/formulario-desde0/formul
 import { FromularioCreado1Component } from './components/fromulario-creado1/fromulario-creado1.component';
 import { FormulariosCreado2Component } from './components/formularios-creado2/formularios-creado2.component';
 import { FormularioCreado3Component } from './components/formulario-creado3/formulario-creado3.component';
-import { from } from 'rxjs';
+import { ErrorComponent } from './components/error/error.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { from } from 'rxjs';
     FormularioDesde0Component,
     FromularioCreado1Component,
     FormulariosCreado2Component,
-    FormularioCreado3Component
+    FormularioCreado3Component,
+    ErrorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

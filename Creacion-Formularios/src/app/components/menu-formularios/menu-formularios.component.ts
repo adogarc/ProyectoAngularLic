@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-menu-formularios',
+  selector: 'menu-formularios',
   templateUrl: './menu-formularios.component.html',
   styleUrls: ['./menu-formularios.component.css']
 })
