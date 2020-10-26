@@ -1,8 +1,9 @@
+
 .carusel
 {
     width: 100%;
     overflow-x: scroll;
-    padding: 30px;
+ padding: 100px;
     position: relative;
 }
 ::-webkit-scrollbar 
@@ -18,10 +19,11 @@
 }
 .carusel-item
 {
-    width:400px;
-    height: 400px;
+    width:300px;
+    height: 300px;
     border-radius: 20px;
-    background-color: aqua;
+    border-color: #b4b4b4;
+    background-color: rgb(0, 255, 149);
     overflow: hidden;
     margin-right: 10px;
     display: inline-block;
@@ -45,9 +47,10 @@
 }
 .carusel-item__img 
 {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
 }
 .carusel-item__details
 {

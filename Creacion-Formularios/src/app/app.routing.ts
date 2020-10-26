@@ -15,13 +15,13 @@ import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
 
  const appRoutes: Routes=[
-     {path:'', component:AppComponent},
+     {path:'', component:HomeComponent},
      {path:'home', component:HomeComponent},
      {path:'menu-formulario', component:MenuFormulariosComponent},
      {path:'formularionuevo', component:FormularioDesde0Component},
-     {path:'formulario1', component:FromularioCreado1Component},
-     {path:'formulario2', component:FormulariosCreado2Component},
-     {path:'formulario3', component:FormularioCreado3Component},
+     {path:'formulariouno', component:FromularioCreado1Component},
+     {path:'formulariodos', component:FormulariosCreado2Component},
+     {path:'formulariotres', component:FormularioCreado3Component},
      {path:'**', component:ErrorComponent},
  ];
 
