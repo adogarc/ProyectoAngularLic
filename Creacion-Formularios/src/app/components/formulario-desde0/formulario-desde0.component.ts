@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FormularioDesde0Component implements OnInit {
 public page_title:string;
   constructor() { 
-    this.page_title='crea tu formulario';  }
+     }
 
   ngOnInit(): void {
   }

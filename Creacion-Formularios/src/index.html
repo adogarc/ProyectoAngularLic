@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
+  <script>
+    function crearcontenedor() {
+      var x = document.createElement("div");
+      x.setAttribute("id", "divprueba")
+      x.setAttribute("style","margin:auto")
+
+      var texto = document.createElement("input");
+      texto.setAttribute("type", "text");
+      texto.setAttribute("placeholder", "Ingrese su pregunta");
+
+      var texto2 = document.createElement("input");
+      texto2.setAttribute("type", "text");
+      texto2.setAttribute("placeholder", "prueba");
+      x.appendChild(texto);
+      x.appendChild(texto2);
+      document.body.appendChild(x, texto, texto2);
+    }
+    function Eliminardiv(id) {
+      var x = document.getElementById(id);
+      if (!x) {
+        alert("elemento no definido");
+      }
+      else {
+        var padre = x.parentNode;
+        padre.removeChild(x);
+      }
+    }
+
+    function cambiarfondo(f) {
+      // console.log(f.value);
+      var body = document.getElementById("body");
+      body.style.backgroundColor = f.value;
+    }
+  </script>
+
 </body>
+
 </html>

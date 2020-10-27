@@ -1,12 +1,10 @@
-<p>formulario-desde0 works!</p>
-<!DOCTYPE html>
+
 <html lang="es">
 
 <head>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="formulario-desde0.component.css">
-    <link rel="stylesheet" href="">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
@@ -14,14 +12,10 @@
 
 <body style="background-color: #e7e7e7;">
     <br>
+    <br>
     <header>
-        <div class="container" id="pregunta">
-            <button onclick="crear()">
-                <i class="fas fa-play-circle"></i>
-            </button>
-
-
-            <p class="texto">Agregar pregunta</p>
+        <div class="container" id="pregunta" onclick="crearcontenedor()">
+            <p class="texto" >Agregar pregunta</p>
 
         </div>
 
@@ -66,41 +60,12 @@
 
         </div>
 
-        <div class="container" id="lista">
+        <div class="container" id="lista" onclick="Eliminardiv()">
             <i class="fas fa-plus-circle"></i>
-            <p class="texto">Agregar pregunta</p>
+            <p class="texto">Eliminar pregunta</p>
 
         </div>
 
     </header>
-    <br>
-    <br>
-    <div id="contformulario">
-        <form>
-            <div class="form-row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
-                </div>
-            </div>
-        </form>
-    </div>
-
-
-
 </body>
-<script>
-    function crear() {
-        var x = document.getElementById('contformulario');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-        }
-
-    }
-</script>
-
 </html>

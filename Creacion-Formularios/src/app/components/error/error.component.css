@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+    font-size: 2cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    
+}
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+  }
+  .bounce {
+    animation-name: bounce;
+    font-size: 3cm;
+  }
+  
