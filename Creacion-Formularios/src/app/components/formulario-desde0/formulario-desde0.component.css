@@ -9,21 +9,29 @@
 
 header{
   
-    margin:100px auto;
+    margin:50px auto;
     width: auto;
-    height: 180px;
+    height: 160px;
     background-color:gray;
 }
 
 div.container{
     width: 160px;
-    height: 180px;
+    height: 160px;
     float: left;
     -webkit-transition: height .4s;
 }
 
-div#pregunta{
+div.container#pregunta{
     background-color: rgb(22, 107,162);
+}
+div.container#prueba{
+    text-align: center;
+    margin-left: 5cm;
+    margin-top: 1cm;
+    background-color: rgba(175, 175, 127, 0.596);
+    width: 30cm;
+    border-radius: 20px;
 }
 
 div#boton{
@@ -55,18 +63,15 @@ p.texto
     font-size: 1.2em;
     color: white;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 2px;
     opacity: 0.6; 
     -webkit-transition: padding-top 0.4s; 
     
 }
 
-div.container:hover{
-    height:200px ;
-}
 
 div.container:hover p.texto{
-    padding-top: 30px;
+    padding-top: 10px;
     opacity: 1;
 }
 div.container:hover img.icon{

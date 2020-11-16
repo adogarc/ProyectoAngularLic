@@ -1,7 +1,7 @@
 <header>
     <div class="container" id="pregunta" >
         <a id="myBtn">
-            <img class="icon" src="assets/images/add.png" (click)="show=true">
+            <img class="icon" src="assets/images/add.png" (click)="show=true" (click)="btnon=true">
         </a>
         <p class="texto">Agregar Correo Electronico</p>
     </div>
@@ -57,53 +57,43 @@
 
 </header>
 
- <div id="pregunta" *ngIf=show>
-<input type="text" class="password" placeholder="Contraseña" > <input type="texto" placeholder="Numero de Telefono"><button (click)="show=!show">Eliminar div</button> <button (click)="showdos=true">Agregar nueva pregunta</button>
-<p>Prueba de ngif</p>
+ <div class="container" id="prueba" *ngIf=show>
+    <p>Pregunta 1</p>
+<input type="text" class="password" placeholder="Contraseña" > 
+<input type="text" placeholder="Numero de Telefono">
+<button (click)="show=!show">Eliminar div</button>
+ <button *ngIf=btnon (click)="showdos=true" (click)="btnon=!btnon">Agregar nueva pregunta</button>
+
  </div>
- <div id="pregunta" *ngIf=showdos>
-    <input type="text" class="password" placeholder="Contraseña" > <button (click)="showdos=!showdos">Eliminar div</button> <button (click)="showdos=true">Agregar nueva pregunta</button>
+ <div class="container" id="prueba" *ngIf=showdos>
+    <input type="text" class="password" placeholder="Contraseña" > 
+    <button (click)="showdos=!showdos">Eliminar div</button> 
+    <button (click)="showtres=true">Agregar nueva pregunta</button>
     <p>Prueba de ngif 2</p>
      </div>
 
-      <!-- MODAL PARA PREGUNTA 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Agregar pregunta</h2>
-        </div>
-        <div class="modal-body">
-            <form>
-                <p>Edite pregunta</p>
-                <input type="text" name="" placeholder="Ingrese pregunta">
-                <p>Password</p>
-                <input type="password" name="" placeholder="*********">
-                <input type="submit" name="" value="Agregar">
-            </form>
-        </div>
-        <div class="modal-footer">
-            <h3>Modal footer</h3>
-        </div>
-    </div>
-</div>
-<div id="modal-list" class="modal-list">
-    <div class="modal-content-list">
-        <div class="modal-header-list">
-            <span class="close_list">&times;</span>
-            <h2>Agregar pregunta</h2>
-        </div>
-        <div class="modal-body-list">
-            <form>
-                <p>Edite pregunta</p>
-                <input type="Text" name="" placeholder="Ingrese pregunta">
-                
-                 
-                <input type="submit" name="" value="Agregar">
-            </form>
-        </div>
-        <div class="modal-footer-list">
-            <h3>Modal footer</h3>
-        </div>
-    </div>
-</div>-->
+     <div class="container" id="prueba" *ngIf=showtres>
+        <p>Pregunta 1</p>
+    <input type="text" class="password" placeholder="Contraseña" > 
+    <input type="text" placeholder="Numero de Telefono">
+    <button (click)="showtres=!showtres">Eliminar div</button>
+     <button (click)="showcuatro=true">Agregar nueva pregunta</button>
+    
+     </div>
+     <div class="container" id="prueba" *ngIf=showcuatro>
+        <p>Pregunta 1</p>
+    <input type="text" class="password" placeholder="Contraseña" > 
+    <input type="text" placeholder="Numero de Telefono">
+    <button (click)="showcuatro=!showcuatro">Eliminar div</button>
+     <button (click)="showdos=true">Agregar nueva pregunta</button>
+    
+     </div>
+     <div class="container" id="prueba" *ngIf=showcinco>
+        <p>Pregunta 1</p>
+    <input type="text" class="password" placeholder="Contraseña" > 
+    <input type="text" placeholder="Numero de Telefono">
+    <button (click)="showcinco=!showcinco">Eliminar div</button>
+     <button (click)="showdos=true">Agregar nueva pregunta</button>
+    
+     </div>
+      
