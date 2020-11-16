@@ -1,69 +1,201 @@
-
-
 *{
-    margin: 0px;
-    padding: 0px;
-    font-family: verdana;
+    margin: 0;
+    padding: 0;
+     
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+
 header{
-    width:auto;
-    height: 150px;
-    background-color: gray;
+  
+    margin:100px auto;
+    width: auto;
+    height: 180px;
+    background-color:gray;
 }
 
 div.container{
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 180px;
     float: left;
     -webkit-transition: height .4s;
-
 }
-div{
-    
-    margin: auto;
-    width: 810px;
-    height: 200px;
-    background-color: royalblue;
-    -webkit-border-radius: 7px;
-    -webkit-box-shadow: 0px 2px 4px #B4B4B4;
-}
- 
-p.texto{
-    font-size: 1.2em;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    opacity: 0.6;
-    -webkit-transition: padding-top0.4s;
-}
-td.icon{
-    display: block;
-    margin: 50% auto;
-    color: white;
-    width: 40px;
-    padding: 20px;
-    
-}
- 
 
 div#pregunta{
-    background-color: rgb(208, 101,3);
+    background-color: rgb(22, 107,162);
 }
 
 div#boton{
-    background-color: rgb(233, 147,26);
+    background-color: rgb(22, 107,162);
 }
 
 div#calendario{
-    background-color: rgb(22, 145,190);
+    background-color: rgb(22, 107,162);
 }
 
 div#lista{
     background-color: rgb(22, 107,162);
 }
-div.container:hover{
-    height:170px ;
+
+img.icon{
+    display: block;
+    margin: 20px auto;
+    background-color: rgba(255,255,255, 0.15);
+    width: 50px; 
+    padding: 10px;
+   -webkit-border-radius: 30%;
+   -webkit-box-shadow: 0px 0px 0px 15px rgba(255,255,255,0 );
+   -webkit-transition: box-shadow 0.4s;
 }
+
+
+p.texto
+{
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    opacity: 0.6; 
+    -webkit-transition: padding-top 0.4s; 
+    
+}
+
+div.container:hover{
+    height:200px ;
+}
+
 div.container:hover p.texto{
     padding-top: 30px;
+    opacity: 1;
 }
+div.container:hover img.icon{
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.6 );
+}
+
+.modal, .modal-list {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 300px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content, .modal-content-list {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s; 
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close ,
+  .close_list{
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close_list:hover,
+  .close:focus,
+  .close_list:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header, .modal-header-list {
+    padding: 2px 16px;
+    background-color: #cc3300;
+    color: white;
+  
+  }
+  
+  .modal-body, .modal-body-list {padding: 2px 16px;
+  background: gray;}
+  
+  .modal-footer, .modal-footer-list {
+    padding: 2px 16px;
+    background-color: grey;
+    color: white;
+  }
+
+  .modal-body p, .modal-body-list p{
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+
+  }
+
+  .modal-body input, .modal-body-list input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+
+  }
+
+  .modal-body input[type="text"], 
+  .modal-body input[type="password"],
+  .modal-body-list input[type="text"]
+  {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  ::placeholder{
+    color: rgba(255,255,255, 0.5);
+  }
+
+  .modal-body input[type="submit"],
+  .modal-body-list input[type="submit"]
+  {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #cc3300;
+    cursor: pointer;
+    border-radius: 20px;
+
+  }
+  .modal-body input[type="submit"]:hover,
+  .modal-body-list input[type="submit"]:hover
+  {
+    background: #ffffff;
+    color: #262626;
+    
+  }

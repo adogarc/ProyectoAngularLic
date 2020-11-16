@@ -1,71 +1,109 @@
+<header>
+    <div class="container" id="pregunta" >
+        <a id="myBtn">
+            <img class="icon" src="assets/images/add.png" (click)="show=true">
+        </a>
+        <p class="texto">Agregar Correo Electronico</p>
+    </div>
 
-<html lang="es">
+    <div class="container" id="boton">
+        <a href="#" id="btn_list">
+            <img class="icon" src="assets/images/listing.png">
+        </a>
+        <p class="texto">Agregar lista</p>
+    </div>
 
-<head>
-    <meta charset="utf-8">
+    <div class="container" id="calendario">
+        <img class="icon" src="assets/images/calendar-interface-symbol-tool.png">
+        <p class="texto">Agregar calendario</p>
 
-    <link rel="stylesheet" href="formulario-desde0.component.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    </div>
 
-</head>
+    <div class="container" id="lista">
+        <img class="icon" src="assets/images/link.png">
+        <p class="texto">Agregar link</p>
 
-<body style="background-color: #e7e7e7;">
-    <br>
-    <br>
-    <header>
-        <div class="container" id="pregunta" onclick="crearcontenedor()">
-            <p class="texto" >Agregar pregunta</p>
+    </div>
+    <div class="container" id="lista">
+        <img class="icon" src="assets/images/image.png">
+        <p class="texto">Agregar imagen</p>
 
+    </div>
+
+    <div class="container" id="lista">
+        <img class="icon" src="assets/images/combo-box.png">
+        <p class="texto">Agregar Combobox</p>
+
+    </div>
+
+    <div class="container" id="lista">
+        <img class="icon" src="assets/images/add.png">
+        <p class="texto">Agregar pregunta</p>
+
+    </div>
+
+    <div class="container" id="lista">
+        <img class="icon" src="assets/images/add.png">
+        <p class="texto">Agregar pregunta</p>
+
+    </div>
+
+    <div class="container" id="lista">
+        <i class="fas fa-plus-circle"></i>
+        <p class="texto">Agregar pregunta</p>
+
+
+    </div>
+
+</header>
+
+ <div id="pregunta" *ngIf=show>
+<input type="text" class="password" placeholder="Contraseña" > <input type="texto" placeholder="Numero de Telefono"><button (click)="show=!show">Eliminar div</button> <button (click)="showdos=true">Agregar nueva pregunta</button>
+<p>Prueba de ngif</p>
+ </div>
+ <div id="pregunta" *ngIf=showdos>
+    <input type="text" class="password" placeholder="Contraseña" > <button (click)="showdos=!showdos">Eliminar div</button> <button (click)="showdos=true">Agregar nueva pregunta</button>
+    <p>Prueba de ngif 2</p>
+     </div>
+
+      <!-- MODAL PARA PREGUNTA 
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Agregar pregunta</h2>
         </div>
-
-        <div class="container" id="boton">
-            <td class="icon"><i class="fas fa-plus-circle"></i></td>
-            <p class="texto">Agregar pregunta</p>
-
+        <div class="modal-body">
+            <form>
+                <p>Edite pregunta</p>
+                <input type="text" name="" placeholder="Ingrese pregunta">
+                <p>Password</p>
+                <input type="password" name="" placeholder="*********">
+                <input type="submit" name="" value="Agregar">
+            </form>
         </div>
-
-        <div class="container" id="calendario">
-            <i class="fas fa-plus-circle"></i>
-            <p class="texto">Agregar pregunta</p>
-
+        <div class="modal-footer">
+            <h3>Modal footer</h3>
         </div>
-
-        <div class="container" id="lista">
-            <i class="fas fa-plus-circle"></i>
-            <p class="texto">Agregar pregunta</p>
-
+    </div>
+</div>
+<div id="modal-list" class="modal-list">
+    <div class="modal-content-list">
+        <div class="modal-header-list">
+            <span class="close_list">&times;</span>
+            <h2>Agregar pregunta</h2>
         </div>
-        <div class="container" id="lista">
-            <i class="fas fa-plus-circle"></i>
-            <p class="texto">Agregar pregunta</p>
-
+        <div class="modal-body-list">
+            <form>
+                <p>Edite pregunta</p>
+                <input type="Text" name="" placeholder="Ingrese pregunta">
+                
+                 
+                <input type="submit" name="" value="Agregar">
+            </form>
         </div>
-
-        <div class="container" id="lista">
-            <i class="fas fa-plus-circle"></i>
-            <p class="texto">Agregar pregunta</p>
-
+        <div class="modal-footer-list">
+            <h3>Modal footer</h3>
         </div>
-
-        <div class="container" id="lista">
-            <i class="fas fa-plus-circle"></i>
-            <p class="texto">Agregar pregunta</p>
-
-        </div>
-
-        <div class="container" id="lista">
-            <i class="fas fa-plus-circle"></i>
-            <p class="texto">Agregar pregunta</p>
-
-        </div>
-
-        <div class="container" id="lista" onclick="Eliminardiv()">
-            <i class="fas fa-plus-circle"></i>
-            <p class="texto">Eliminar pregunta</p>
-
-        </div>
-
-    </header>
-</body>
-</html>
+    </div>
+</div>-->
