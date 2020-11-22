@@ -13,6 +13,7 @@ import { FormularioCreado3Component } from './components/formulario-creado3/form
 import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
 import { DesarolladoresComponent } from './components/desarolladores/desarolladores.component';
+import { AngularFileUploaderModule } from "angular-file-uploader";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DesarolladoresComponent } from './components/desarolladores/desarollado
   imports: [
     BrowserModule,
     routing,
-    FormsModule
+    FormsModule,
+    AngularFileUploaderModule,
   ],
   providers: [
     appRoutingProviders

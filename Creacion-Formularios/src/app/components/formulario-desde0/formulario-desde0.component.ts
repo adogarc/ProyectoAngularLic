@@ -7,15 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioDesde0Component implements OnInit {
   show: true;
-  showdos:false;
-  showtres:false;
-  showcuatro:false;
-  showcinco:false;
-  btnon:true;
+  showdos: false;
+  showtres: false;
+  showcuatro: false;
+  showcinco: false;
+  btnon: true;
   public page_title: string;
   constructor() {
   }
   ngOnInit(): void {
   }
+  public afuConfig = {
+    uploadAPI: {
+      url: "https://example-file-upload-api"
+    }
+  };
 
+  public generar(){
+    var el=document.getElementById('pruebabody');alert(el.outerHTML)
+  }
 }

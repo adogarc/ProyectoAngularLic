@@ -1,207 +1,184 @@
 *{
-    margin: 0;
-    padding: 0;
-     
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+   
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
+html, body{
+  background-color:  #737373;
+}
 
 header{
+
+  margin:55px auto;
+  width: 1200px;
+  height: 180px;
   
-    margin:50px auto;
-    width: auto;
-    height: 160px;
-    background-color:gray;
 }
 
 div.container{
-    width: 160px;
-    height: 160px;
-    float: left;
-    -webkit-transition: height .4s;
+  width: 160px;
+  height: 180px;
+  float: left;
+  -webkit-transition: height .4s;
 }
 
-div.container#pregunta{
-    background-color: rgb(22, 107,162);
-}
-#prueba{
-    text-align: center;
-    margin-left: 5cm;
-    margin-top: 1cm;
-    background-color: rgba(175, 175, 127, 0.596);
-    width: 30cm;
-    height: 5cm;
-    border-radius: 20px;
+
+div#pregunta{
+  background-color: rgb(27, 27, 27);
 }
 
 div#boton{
-    background-color: rgb(22, 107,162);
+  background-color: rgb(27, 27, 27);
 }
 
 div#calendario{
-    background-color: rgb(22, 107,162);
+  background-color: rgb(27, 27, 27);
 }
 
 div#lista{
-    background-color: rgb(22, 107,162);
+   background-color: rgb(27, 27, 27);
 }
 
 img.icon{
-    display: block;
-    margin: 20px auto;
-    background-color: rgba(255,255,255, 0.15);
-    width: 50px; 
-    padding: 10px;
-   -webkit-border-radius: 30%;
-   -webkit-box-shadow: 0px 0px 0px 15px rgba(255,255,255,0 );
-   -webkit-transition: box-shadow 0.4s;
+  display: block;
+  margin: 20px auto;
+  background-color: rgba(255,255,255, 0.15);
+  width: 50px; 
+  padding: 10px;
+ -webkit-border-radius: 30%;
+ -webkit-box-shadow: 0px 0px 0px 15px rgba(14, 218, 233, 0);
+ -webkit-transition: box-shadow 0.4s;
+}
+
+img.icon-content{
+  display: block;
+  margin: 15px auto;
+  background-color: rgba(255,255,255, 0.15);
+  width: 30px; 
+  padding: 10px;
+ -webkit-border-radius: 30%;
+ -webkit-box-shadow: 0px 0px 0px 15px rgba(14, 218, 233, 0);
+ -webkit-transition: box-shadow 0.4s;
+
 }
 
 
 p.texto
 {
-    font-size: 1.2em;
-    color: white;
-    text-align: center;
-    padding-top: 2px;
-    opacity: 0.6; 
-    -webkit-transition: padding-top 0.4s; 
-    
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  opacity: 0.6; 
+  -webkit-transition: padding-top 0.4s; 
+  
 }
 
 
 div.container:hover p.texto{
-    padding-top: 10px;
-    opacity: 1;
+  padding-top: 30px;
+  opacity: 1;
 }
-div.container:hover img.icon{
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.6 );
+div.container:hover img.icon
+
+{
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(233, 14, 14, 0.918);
+  height:50px ;
 }
 
-.modal, .modal-list {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 300px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content, .modal-content-list {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 40%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s; 
-  }
-  
-  /* Add Animation */
-  @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-  }
-  
-  @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-  }
-  
-  /* The Close Button */
-  .close ,
-  .close_list{
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close_list:hover,
-  .close:focus,
-  .close_list:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal-header, .modal-header-list {
-    padding: 2px 16px;
-    background-color: #cc3300;
-    color: white;
-  
-  }
-  
-  .modal-body, .modal-body-list {padding: 2px 16px;
-  background: gray;}
-  
-  .modal-footer, .modal-footer-list {
-    padding: 2px 16px;
-    background-color: grey;
-    color: white;
-  }
+.content-button:hover img.icon-content{
+  -webkit-box-shadow: 0px 0px 0px 0px  rgba(29, 26, 26, 0.918);
+}
 
-  .modal-body p, .modal-body-list p{
-    margin: 0;
-    padding: 10px;
-    font-weight: bold;
-    color: #ffffff;
 
+.content-add > *{
+  padding: 1em;
+}
+
+.content-add{
+  margin-left: 16rem;
+
+
+}
+
+.content-form{
+  background: #524f4f;
+   
+
+}
+
+.content-form form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+
+.content-form form .block{
+  grid-column: 1/3;
+}
+
+.content-form form p{
+  margin: 0;
+  padding: 1em;
+  color: #ffffff;
+
+}
+
+.content-form form input{
+  width: 90%;
+  padding:0.7em ;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #ffffff;
+  border-bottom: 1px solid  #bb0010;
+}
+
+.content-button{
+  background: #910000;
+  width: 50px;
+  
+   
+}
+
+.content-button img{
+  text-align: center;
+  margin:  0 0 1rem 0;
+}
+
+@media (min-width:700px){
+  body{
+      padding: 0 2rem;
   }
-
-  .modal-body input, .modal-body-list input{
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 5px;
-
+  .content-add{
+      display: grid;
+      grid-template-columns: 2fr 1fr ;
   }
-
-  .modal-body input[type="text"], 
-  .modal-body input[type="password"],
-  .modal-body-list input[type="text"]
-  {
-    border: none;
-    border-bottom: 1px solid #ffffff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #ffffff;
-    font-size: 16px;
+  .content-add> *{
+      padding: 2em;
   }
+}
 
-  ::placeholder{
-    color: rgba(255,255,255, 0.5);
-  }
+.content{
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  border-radius: 20%;
 
-  .modal-body input[type="submit"],
-  .modal-body-list input[type="submit"]
-  {
-    border: none;
-    outline: none;
-    height: 40px;
-    color: #ffffff;
-    font-size: 16px;
-    background: #cc3300;
-    cursor: pointer;
-    border-radius: 20px;
+}
 
-  }
-  .modal-body input[type="submit"]:hover,
-  .modal-body-list input[type="submit"]:hover
-  {
-    background: #ffffff;
-    color: #262626;
-    
-  }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,11 @@
 body {
     font-family: 'Titillium Web', sans-serif;
 }
+#encabezado{
+    font-family: 'Titillium web', sans-serif;
+    animation-delay: 5ms;
+    animation-direction: normal;
+}
 
 header {
     margin-top: 75px;

@@ -1,102 +1,237 @@
-<header>
-    <div class="container" id="pregunta">
-        <a id="myBtn">
-            <img class="icon" src="assets/images/add.png" (click)="show=true" (click)="btnon=true">
-        </a>
-        <p class="texto">Agregar Correo Electronico</p>
-    </div>
-
-    <div class="container" id="boton">
-        <a href="#" id="btn_list">
-            <img class="icon" src="assets/images/listing.png">
-        </a>
-        <p class="texto">Agregar lista</p>
-    </div>
-
-    <div class="container" id="calendario">
-        <img class="icon" src="assets/images/calendar-interface-symbol-tool.png">
-        <p class="texto">Agregar calendario</p>
-
-    </div>
-
-    <div class="container" id="lista">
-        <img class="icon" src="assets/images/link.png">
-        <p class="texto">Agregar link</p>
-
-    </div>
-    <div class="container" id="lista">
-        <img class="icon" src="assets/images/image.png">
-        <p class="texto">Agregar imagen</p>
-
-    </div>
-
-    <div class="container" id="lista">
-        <img class="icon" src="assets/images/combo-box.png">
-        <p class="texto">Agregar Combobox</p>
-
-    </div>
-
-    <div class="container" id="lista">
-        <img class="icon" src="assets/images/add.png">
-        <p class="texto">Agregar pregunta</p>
-
-    </div>
-
-    <div class="container" id="lista">
-        <img class="icon" src="assets/images/add.png">
-        <p class="texto">Agregar pregunta</p>
-
-    </div>
-
-    <div class="container" id="lista">
-        <i class="fas fa-plus-circle"></i>
-        <p class="texto">Agregar pregunta</p>
-
-
-    </div>
-
-</header>
-
-<div class="container-fluid" id="prueba" *ngIf="show">
-    <div class="row">
-        <p>Pregunta 1</p>
-        <div class="col-4">
-            <input type="text" class="form-control" name="pruebavalidacion" placeholder="Ingrese su Contraseña" required pattern="[A-Za-z]+" title="solo se aceptan letras">
-            
+<body id="pruebabody" >
+    <header>
+        <div class="container" id="pregunta">
+            <a  id="myBtn">
+                <img class="icon" src="assets/images/add.png"  (click)="show=true" (click)="btnon=true">
+            </a>
+            <p class="texto">Texto</p>
         </div>
-        <div class="col-4">
-            <input type="text" class="form-control" placeholder="Numero de Telefono">
-            <button (click)="show=!show">Eliminar div</button>
-            <button *ngIf="btnon" (click)="showdos=true" (click)="btnon=!btnon">Agregar nueva pregunta</button>
-</div>
-<div class="container" id="prueba" *ngIf="showdos">
-    <input type="text" class="password" placeholder="Contraseña">
-    <button (click)="showdos=!showdos">Eliminar div</button>
-    <button (click)="showtres=true">Agregar nueva pregunta</button>
-    <p>Prueba de ngif 2</p>
-</div>
-
-<div class="container" id="prueba" *ngIf="showtres">
-    <p>Pregunta 1</p>
-    <input type="text" class="password" placeholder="Contraseña">
-    <input type="text" placeholder="Numero de Telefono">
-    <button (click)="showtres=!showtres">Eliminar div</button>
-    <button (click)="showcuatro=true">Agregar nueva pregunta</button>
-
-</div>
-<div class="container" id="prueba" *ngIf="showcuatro">
-    <p>Pregunta 1</p>
-    <input type="text" class="password" placeholder="Contraseña">
-    <input type="text" placeholder="Numero de Telefono">
-    <button (click)="showcuatro=!showcuatro">Eliminar div</button>
-    <button (click)="showdos=true">Agregar nueva pregunta</button>
-
-</div>
-<div class="container" id="prueba" *ngIf="showcinco">
-    <p>Pregunta 1</p>
-    <input type="text" class="password" placeholder="Contraseña">
-    <input type="text" placeholder="Numero de Telefono">
-    <button (click)="showcinco=!showcinco">Eliminar div</button>
-    <button (click)="showdos=true">Agregar nueva pregunta</button>
-
-</div>
+    
+        <div class="container" id="boton">
+            <a  id="btn_list">
+                <img class="icon" src="assets/images/id.png" (click)="showdos=true">
+            </a>
+            <p class="texto"> ID</p>
+        </div>
+    
+        <div class="container" id="calendario" (click)="showtres=true">
+            <a>
+                <img class="icon" src="assets/images/email.png">   
+            </a>
+            <p class="texto">Correo</p>
+    
+        </div>
+    
+        <div class="container" id="lista" (click)="showcuatro=true">
+            <img class="icon" src="assets/images/phone.png">
+            <p class="texto">Telefono</p>
+    
+        </div>
+        <div class="container" id="lista"(click)="showcinco=true" >
+            <img class="icon" src="assets/images/calendar-interface-symbol-tool.png">
+            <p class="texto">Calendario</p>
+    
+        </div>
+    
+        <div class="container" id="lista">
+            <img class="icon" src="assets/images/image.png">
+            <p class="texto">Imagen</p>
+    
+        </div>
+    
+        <div class="container" id="lista">
+            <img class="icon" src="assets/images/listing.png">
+            <p class="texto">Opción multiple</p>
+    
+        </div>
+    
+    
+    </header>
+    <button type="button" id="generador" (click)="generar()">Generar codigo fuente</button>
+    
+    <!--Formularios para texto plano-->
+    <div class="container-fluid" id="prueba" *ngIf="show">
+        <div class="row">
+            <p>Pregunta 1</p>
+            <div class="col-4">
+                
+    
+            </div>
+        </div>
+    </div>
+           
+    
+            <!--Formularios para boton de celular-->
+            <div class="content" *ngIf="showcuatro">
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                
+                                <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su número de contacto">
+                            </p>
+        
+                            <p>
+                                <label for="pregunta">Telefono</label>
+                                <input type="text" name="tel" id="pregunta">
+                            </p>
+                            <p>
+                                <label for="pregunta">Celular</label>
+                                <input type="text" name="tel" id="pregunta">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a href="#" id="agregar">
+                            <img class="icon-content" src="src/add.png" alt="">
+                        </a>
+        
+                        <a href="#" id="delete">
+                            <img class="icon-content" src="src/delete.png" alt="">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Formulario de ID-->
+            <div class="content" *ngIf="showdos">
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <input type="text" name="pregunta" id="pregunta" >
+                            </p>
+        
+                            <p>
+                                <label for="pregunta">ID</label>
+                                <input type="text" name="tel" id="pregunta">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a href="#" id="agregar">
+                            <img class="icon-content" src="src/add.png" alt="">
+                        </a>
+        
+                        <a href="#" id="delete">
+                            <img class="icon-content" src="src/delete.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Formulario de Email-->
+            <div class="content" *ngIf="showtres">
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="pregunta">Edite pregunta</label>
+                                <input type="text" name="pregunta" id="pregunta">
+                            </p>
+        
+                            <p>
+                                <label for="pregunta">Correo</label>
+                                <input type="text" name="tel" id="pregunta">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a href="#" id="agregar">
+                            <img class="icon-content" src="src/add.png" alt="">
+                        </a>
+        
+                        <a href="#" id="delete">
+                            <img class="icon-content" src="src/delete.png" alt="">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>  
+    
+            <!--Formulario para agregar calendario-->
+            <div class="content">
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="pregunta">Edite pregunta</label>
+                                <input type="text" name="pregunta" id="pregunta">
+                            </p>
+        
+                            <p>
+                                <label for="pregunta">Calendario</label>
+                                <input type="text" name="tel" id="pregunta">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a href="#" id="agregar">
+                            <img class="icon-content" src="src/add.png" alt="">
+                        </a>
+        
+                        <a href="#" id="delete">
+                            <img class="icon-content" src="src/delete.png" alt="">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <!--Formulario para agregar imagen-->
+            <div class="content">
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="pregunta">Seleccione una imagen que desea agregar</label>
+                            </p>
+        
+                            <p>
+                                <label for="pregunta">Imagen</label>
+                                <angular-file-uploader [config]="afuConfig"></angular-file-uploader>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a href="#" id="agregar">
+                            <img class="icon-content" src="src/add.png" alt="">
+                        </a>
+        
+                        <a href="#" id="delete">
+                            <img class="icon-content" src="src/delete.png" alt="">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <!--Formularios para Opcion Multiple-->
+            <div class="content">
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="pregunta">Edite pregunta</label>
+                                <input type="text" name="pregunta" id="pregunta">
+                            </p>
+        
+                            <p>
+                                <label for="pregunta">Opcion multiple</label>
+                                <input type="text" name="tel" id="pregunta">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a href="#" id="agregar">
+                            <img class="icon-content" src="src/add.png" alt="">
+                        </a>
+        
+                        <a href="#" id="delete">
+                            <img class="icon-content" src="src/delete.png" alt="">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
