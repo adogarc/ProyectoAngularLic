@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import{routing,appRoutingProviders} from './app.routing';
 import {FormsModule} from '@angular/forms';
+import{routing,appRoutingProviders} from './app.routing';
 
 
 import { AppComponent } from './app.component';
@@ -12,6 +12,7 @@ import { FormulariosCreado2Component } from './components/formularios-creado2/fo
 import { FormularioCreado3Component } from './components/formulario-creado3/formulario-creado3.component';
 import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
+import { DesarolladoresComponent } from './components/desarolladores/desarolladores.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,13 @@ import { HomeComponent } from './components/home/home.component';
     FormulariosCreado2Component,
     FormularioCreado3Component,
     ErrorComponent,
-    HomeComponent
+    HomeComponent,
+    DesarolladoresComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FormsModule
   ],
   providers: [
     appRoutingProviders

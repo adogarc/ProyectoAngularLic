@@ -13,6 +13,8 @@ import { from } from 'rxjs';
 import { AppComponent } from './app.component';
 import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
+import { DesarolladoresComponent } from './components/desarolladores/desarolladores.component';
+
 
  const appRoutes: Routes=[
      {path:'', component:HomeComponent},
@@ -22,6 +24,7 @@ import { HomeComponent } from './components/home/home.component';
      {path:'formulariouno', component:FromularioCreado1Component},
      {path:'formulariodos', component:FormulariosCreado2Component},
      {path:'formulariotres', component:FormularioCreado3Component},
+     {path: 'desarolladores', component:DesarolladoresComponent},
      {path:'**', component:ErrorComponent},
  ];
 

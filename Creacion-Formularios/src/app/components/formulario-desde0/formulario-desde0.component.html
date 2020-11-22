@@ -1,5 +1,5 @@
 <header>
-    <div class="container" id="pregunta" >
+    <div class="container" id="pregunta">
         <a id="myBtn">
             <img class="icon" src="assets/images/add.png" (click)="show=true" (click)="btnon=true">
         </a>
@@ -57,43 +57,46 @@
 
 </header>
 
- <div class="container" id="prueba" *ngIf=show>
-    <p>Pregunta 1</p>
-<input type="text" class="password" placeholder="Contraseña" > 
-<input type="text" placeholder="Numero de Telefono">
-<button (click)="show=!show">Eliminar div</button>
- <button *ngIf=btnon (click)="showdos=true" (click)="btnon=!btnon">Agregar nueva pregunta</button>
-
- </div>
- <div class="container" id="prueba" *ngIf=showdos>
-    <input type="text" class="password" placeholder="Contraseña" > 
-    <button (click)="showdos=!showdos">Eliminar div</button> 
+<div class="container-fluid" id="prueba" *ngIf="show">
+    <div class="row">
+        <p>Pregunta 1</p>
+        <div class="col-4">
+            <input type="text" class="form-control" name="pruebavalidacion" placeholder="Ingrese su Contraseña" required pattern="[A-Za-z]+" title="solo se aceptan letras">
+            
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control" placeholder="Numero de Telefono">
+            <button (click)="show=!show">Eliminar div</button>
+            <button *ngIf="btnon" (click)="showdos=true" (click)="btnon=!btnon">Agregar nueva pregunta</button>
+</div>
+<div class="container" id="prueba" *ngIf="showdos">
+    <input type="text" class="password" placeholder="Contraseña">
+    <button (click)="showdos=!showdos">Eliminar div</button>
     <button (click)="showtres=true">Agregar nueva pregunta</button>
     <p>Prueba de ngif 2</p>
-     </div>
+</div>
 
-     <div class="container" id="prueba" *ngIf=showtres>
-        <p>Pregunta 1</p>
-    <input type="text" class="password" placeholder="Contraseña" > 
+<div class="container" id="prueba" *ngIf="showtres">
+    <p>Pregunta 1</p>
+    <input type="text" class="password" placeholder="Contraseña">
     <input type="text" placeholder="Numero de Telefono">
     <button (click)="showtres=!showtres">Eliminar div</button>
-     <button (click)="showcuatro=true">Agregar nueva pregunta</button>
-    
-     </div>
-     <div class="container" id="prueba" *ngIf=showcuatro>
-        <p>Pregunta 1</p>
-    <input type="text" class="password" placeholder="Contraseña" > 
+    <button (click)="showcuatro=true">Agregar nueva pregunta</button>
+
+</div>
+<div class="container" id="prueba" *ngIf="showcuatro">
+    <p>Pregunta 1</p>
+    <input type="text" class="password" placeholder="Contraseña">
     <input type="text" placeholder="Numero de Telefono">
     <button (click)="showcuatro=!showcuatro">Eliminar div</button>
-     <button (click)="showdos=true">Agregar nueva pregunta</button>
-    
-     </div>
-     <div class="container" id="prueba" *ngIf=showcinco>
-        <p>Pregunta 1</p>
-    <input type="text" class="password" placeholder="Contraseña" > 
+    <button (click)="showdos=true">Agregar nueva pregunta</button>
+
+</div>
+<div class="container" id="prueba" *ngIf="showcinco">
+    <p>Pregunta 1</p>
+    <input type="text" class="password" placeholder="Contraseña">
     <input type="text" placeholder="Numero de Telefono">
     <button (click)="showcinco=!showcinco">Eliminar div</button>
-     <button (click)="showdos=true">Agregar nueva pregunta</button>
-    
-     </div>
-      
+    <button (click)="showdos=true">Agregar nueva pregunta</button>
+
+</div>

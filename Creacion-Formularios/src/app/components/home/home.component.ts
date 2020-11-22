@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{sugerencias} from '../../models/sugerencias';
 
 @Component({
   selector: 'home',
@@ -7,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public sugerencia:sugerencias;
   constructor() {
-    
+    this.sugerencia=new sugerencias('','','');
    }
 
   ngOnInit(): void {
     
   }
-
+  onSubmit(form){
+    console.log(this.sugerencia);
+  }
 }
