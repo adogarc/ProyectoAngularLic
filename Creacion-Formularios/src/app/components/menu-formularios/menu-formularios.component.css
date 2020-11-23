@@ -21,9 +21,10 @@
 {
     width:300px;
     height: 300px;
-    border-radius: 20px;
     border-color: #b4b4b4;
-    background-color: rgb(0, 255, 149);
+    background-color: #910000;
+    box-shadow:  0 2px 4px #292929;
+     -webkit-box-shadow: 5px;
     overflow: hidden;
     margin-right: 10px;
     display: inline-block;
@@ -47,7 +48,6 @@
 }
 .carusel-item__img 
 {
-    border-radius: 20px;
     width: 300px;
     height: 300px;
     object-fit: fill;

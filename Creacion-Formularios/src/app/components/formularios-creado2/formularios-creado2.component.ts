@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formularios-creado2.component.css']
 })
 export class FormulariosCreado2Component implements OnInit {
-  public page_title:string;
+
 
   constructor() {
-this.page_title="Usa nuestros formularios"
    }
 
   ngOnInit(): void {

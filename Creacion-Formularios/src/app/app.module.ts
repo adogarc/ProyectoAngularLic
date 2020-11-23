@@ -14,6 +14,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
 import { DesarolladoresComponent } from './components/desarolladores/desarolladores.component';
 import { AngularFileUploaderModule } from "angular-file-uploader";
+import {DragDropModule} from '@angular/cdk/drag-drop' ;
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AngularFileUploaderModule } from "angular-file-uploader";
     routing,
     FormsModule,
     AngularFileUploaderModule,
+    DragDropModule
   ],
   providers: [
     appRoutingProviders

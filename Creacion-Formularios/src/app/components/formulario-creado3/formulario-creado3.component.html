@@ -1,69 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscripción a un evento-Formulario</title>
-    <link rel="stylesheet" href="formulario-creado3.component.css">
-</head>
-<body style="background-color: #e7e7e7;">
-    <p id="titulo">Inscripción a un evento</p>
-    <div id="body">
-        <br>
-        <br>
-        <input id="titulos" type="text" placeholder="Descripción del evento">
-        <br>
-        <br>
-        <input type="text" placeholder="Descripción">
+<body cdkDroplist>
+    br
+    <p id="titulo">Inscripción</p>
+   
+    <div class="content" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="pregunta">Descripción del evento</label>
+                        <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                <a href="#" id="delete">
+                    <img class="icon-content" src="src/delete.png" alt="">
 
+                </a>
+            </div>
+        </div>
     </div>
-    <br>
-    <div id="body">
-        <br>
-        <br>
-        <input id="titulos" type="text" placeholder="Nombre del postulante">
-        <br>
-        <br>
-        <input type="text" placeholder="Nombre">
+    
+    <div class="content" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="pregunta">Nombre</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Nombre completo">
+                    </p> 
+                </form>
+            </div>
+            <div class="content-button">
+                <a href="#" id="delete">
+                    <img class="icon-content" src="src/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
     </div>
-    <br>
-    <div id="body">
-        <br>
-        <br>
-        <input id="titulos" type="text" placeholder="Correo electrónico">
-        <br>
-        <br>
-        <input type="text" placeholder="Dirección de correo electrónico del contacto">
+    
+    <div class="content" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="pregunta">Correo electronico</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="example@gmail.com">
+                    </p> 
+                </form>
+            </div>
+            <div class="content-button">
+                <a href="#" id="delete">
+                    <img class="icon-content" src="src/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
     </div>
-    <br>
-    <div id="body">
-        <br>
-        
-        <input id="titulos" type="text" placeholder="¿Que días asistirá?">
-        <br>
-        <input id="check" type="checkbox"  value="first_checkbox"> <input type="text" id="opc" placeholder="Día 1"><br>
-        <input id="check" type="checkbox"  value="second_checkbox"> <input type="text" id="opc" placeholder="Día 2"> <br>
-        <input id="check" type="checkbox"  value="third_checkbox"> <input type="text" id="opc" placeholder="Día 3"> <br>
+
+    <div class="content" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">¿Que días asistirá?</label>
+                        <br>
+                        <br>
+                        <input id="check" type="checkbox"  value="first_checkbox"> <input type="text" id="opc" placeholder="Día 1"><br>
+                        <input id="check" type="checkbox"  value="second_checkbox"> <input type="text" id="opc" placeholder="Día 2"> <br>
+                        <input id="check" type="checkbox"  value="third_checkbox"> <input type="text" id="opc" placeholder="Día 3"> <br>
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="src/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
     </div>
-    <br>
-    <div id="body">
-        <br>
-        <br>
-        <input id="titulos" type="text" placeholder="Número de teléfono">
-        <br>
-        <br>
-        <input type="tel" id="tel" placeholder="XXXX-XXXX">
+    
+    <div class="content" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        
+                        <label for="telefono">Contactos</label>
+                    </p>
+
+                    <p>
+                        <label for="pregunta">Telefono</label>
+                        <input type="text" name="tel" id="pregunta">
+                    </p>
+                    <p>
+                        <label for="pregunta">Celular</label>
+                        <input type="text" name="tel" id="pregunta">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                <a href="#" id="delete">
+                    <img class="icon-content" src="src/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
     </div>
-    <br>
-    <div id="body">
-        <br>
-        <br>
-        <input id="titulos" type="text" placeholder="Comentarios">
-        <br>
-        <br>
-        <input type="text" placeholder="Comentarios">
-        <br>
+    
+    <div class="content" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="pregunta">Comentarios</label>
+                        <input type="text" name="comentario" id="comentario" placeholder="Comentarios">
+                    </p> 
+                </form>
+            </div>
+            <div class="content-button">
+                <a href="#" id="delete">
+                    <img class="icon-content" src="src/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
     </div>
-    <br>
 </body>
-</html>

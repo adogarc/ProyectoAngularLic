@@ -16,6 +16,12 @@ header{
   height: 180px;
   
 }
+input#rb{
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  margin-left: 5px;
+}
 
 div.container{
   width: 160px;
@@ -54,13 +60,14 @@ img.icon{
 
 img.icon-content{
   display: block;
-  margin: 15px auto;
+  margin: 3px ;
   background-color: rgba(255,255,255, 0.15);
-  width: 30px; 
-  padding: 10px;
+  width: 40px; 
+  padding: 5px;
  -webkit-border-radius: 30%;
  -webkit-box-shadow: 0px 0px 0px 15px rgba(14, 218, 233, 0);
  -webkit-transition: box-shadow 0.4s;
+
 
 }
 
@@ -138,7 +145,7 @@ div.container:hover img.icon
 
 .content-button{
   background: #910000;
-  width: 50px;
+  width: 105px;
   
    
 }

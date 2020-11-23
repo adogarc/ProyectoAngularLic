@@ -1,132 +1,325 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuestionario-Formulario</title>
-    <link rel="stylesheet" href="formularios-creado2.component.css">
-</head>
-<body style="background-color: #e7e7e7;">
+<body>
+    <br>
     <p id="titulo">Cuestionario</p>
-    <div id="body">
-        <br>
-        <br>
-        <input id="titulos" type="text" placeholder="Nombre">
-        <br>
-        <br>
-        <input type="text" placeholder="Nombre completo">
-    </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 1">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="pregunta">Nombre</label>
+                        <input type="text" name="nombre" id="Nombre" placeholder="Nombre completo">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
 
+                </a>
+            </div>
+        </div>
     </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 2">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
 
-    </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 3">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
+    <div class="content" >
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 1</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a  id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="eliminar" >
 
+                </a>
+            </div>
+        </div>
     </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 4">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
-
-    </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 5">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
-
-    </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 6">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
-
-    </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 7">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
-
-    </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 8">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
-
-    </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 9">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
-
-    </div>
-    <br>
-    <div id="body">
-        <br>
-        <input id="titulos" type="text" placeholder="Pregunta 10">
-        <br>
-        <input id="rb" type="radio"  value="first_rb"> <input type="text" id="opc" placeholder="Opcion 1"> <br>
-        <input id="rb" type="radio"  value="second_rb">  <input type="text"  id="opc" placeholder="Opcion 2"><br>
-        <input id="rb" type="radio"  value="third_rb">  <input type="text"  id="opc" placeholder="Opcion 3"><br>
-        <input id="rb" type="radio"  value="fourth_rb">  <input type="text"   id="opc" placeholder="Opcion 4"> 
-
-    </div>
-    <br>
     
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 2</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 3</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 4</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 5</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 6</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 7</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 8</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta ">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 9</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta ">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="">Pregunta 10</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                        <br>
+                        <br>
+                        <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 1"> <br>
+                        <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 2"><br>
+                        <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 3"><br>
+                        <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                            placeholder="Opcion 4">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                
+                <a href="#" id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
 </body>
-</html>

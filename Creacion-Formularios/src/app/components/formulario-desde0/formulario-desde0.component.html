@@ -1,20 +1,20 @@
-<body id="pruebabody" >
+<body id="pruebabody" cdkDroplist>
     <header>
         <div class="container" id="pregunta">
             <a  id="myBtn">
-                <img class="icon" src="assets/images/add.png"  (click)="show=true" (click)="btnon=true">
+                <img class="icon" src="assets/images/add.png"  (click)="show=true" >
             </a>
             <p class="texto">Texto</p>
         </div>
     
         <div class="container" id="boton">
             <a  id="btn_list">
-                <img class="icon" src="assets/images/id.png" (click)="showdos=true">
+                <img class="icon" src="assets/images/id.png" (click)="showid=true" >
             </a>
             <p class="texto"> ID</p>
         </div>
     
-        <div class="container" id="calendario" (click)="showtres=true">
+        <div class="container" id="calendario" (click)="showemail=true" >
             <a>
                 <img class="icon" src="assets/images/email.png">   
             </a>
@@ -22,47 +22,416 @@
     
         </div>
     
-        <div class="container" id="lista" (click)="showcuatro=true">
+        <div class="container" id="lista" (click)="showtel=true" >
             <img class="icon" src="assets/images/phone.png">
             <p class="texto">Telefono</p>
     
         </div>
-        <div class="container" id="lista"(click)="showcinco=true" >
-            <img class="icon" src="assets/images/calendar-interface-symbol-tool.png">
-            <p class="texto">Calendario</p>
-    
-        </div>
-    
-        <div class="container" id="lista">
+        
+        <div class="container" id="lista" (click)="showimage=true" >
             <img class="icon" src="assets/images/image.png">
             <p class="texto">Imagen</p>
     
         </div>
     
-        <div class="container" id="lista">
+        <div class="container" id="lista" (click)="showmultiple=true" >
             <img class="icon" src="assets/images/listing.png">
             <p class="texto">Opción multiple</p>
+    
+        </div>
+        <div class="container" id="lista"(click)="showcal=true" (click)="generar()">
+            <img class="icon" src="assets/images/coding.png">
+            <p class="texto">Generar codigo fuente</p>
     
         </div>
     
     
     </header>
-    <button type="button" id="generador" (click)="generar()">Generar codigo fuente</button>
     
+<!--Cambiar el fondo -->
+
     <!--Formularios para texto plano-->
-    <div class="container-fluid" id="prueba" *ngIf="show">
-        <div class="row">
-            <p>Pregunta 1</p>
-            <div class="col-4">
-                
+        <div class="content"  *ngIf="show" cdkDrag>
+            <div class="content-add">
+                <div class="content-form">
+                    <form action="">
+                        <p class="block">
+                            <label for="pregunta">Cree pregunta</label>
+                            <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                        </p>
     
+                        <p class="block">
+                            <input type="text" name="tel" id="pregunta" placeholder="Respuesta">
+                        </p>
+                    </form>
+                </div>
+                <div class="content-button">
+                    <a  id="agregar">
+                        <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showdos=true">
+                    </a>
+    
+                    <a id="delete">
+                        <img class="icon-content" src="assets/images/delete.png" alt="Eliminar" (click)="show=false">
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content"  *ngIf="showdos" cdkDrag>
+            <div class="content-add">
+                <div class="content-form">
+                    <form action="">
+                        <p class="block">
+                            <label for="pregunta">Cree pregunta</label>
+                            <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                        </p>
+    
+                        <p class="block">
+                            <input type="text" name="tel" id="pregunta" placeholder="Respuesta">
+                        </p>
+                    </form>
+                </div>
+                <div class="content-button">
+                    <a  id="agregar">
+                        <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showtres=true">
+                    </a>
+    
+                    <a id="delete">
+                        <img class="icon-content" src="assets/images/delete.png" alt="Eliminar" (click)="showdos=false">
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content"  *ngIf="showtres" cdkDrag>
+            <div class="content-add">
+                <div class="content-form">
+                    <form action="">
+                        <p class="block">
+                            <label for="pregunta">Cree pregunta</label>
+                            <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                        </p>
+    
+                        <p class="block">
+                            <input type="text" name="tel" id="pregunta" placeholder="Respuesta">
+                        </p>
+                    </form>
+                </div>
+                <div class="content-button">
+                    <a  id="agregar">
+                        <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showcuatro=true">
+                    </a>
+    
+                    <a id="delete">
+                        <img class="icon-content" src="assets/images/delete.png" alt="Eliminar" (click)="showtres=false">
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content"  *ngIf="showcuatro" cdkDrag>
+            <div class="content-add">
+                <div class="content-form">
+                    <form action="">
+                        <p class="block">
+                            <label for="pregunta">Cree pregunta</label>
+                            <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                        </p>
+    
+                        <p class="block">
+                            <input type="text" name="tel" id="pregunta" placeholder="Respuesta">
+                        </p>
+                    </form>
+                </div>
+                <div class="content-button">
+                    <a  id="agregar">
+                        <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showcinco=true">
+                    </a>
+    
+                    <a id="delete">
+                        <img class="icon-content" src="assets/images/delete.png" alt="Eliminar" (click)="showcuatro=false">
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content"  *ngIf="showcinco" cdkDrag>
+            <div class="content-add">
+                <div class="content-form">
+                    <form action="">
+                        <p class="block">
+                            <label for="pregunta">Cree pregunta</label>
+                            <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                        </p>
+    
+                        <p class="block">
+                            <input type="text" name="tel" id="pregunta" placeholder="Respuesta">
+                        </p>
+                    </form>
+                </div>
+                <div class="content-button">
+                    <a  id="agregar">
+                        <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showseis=true">
+                    </a>
+    
+                    <a id="delete">
+                        <img class="icon-content" src="assets/images/delete.png" alt="Eliminar" (click)="showcinco=false">
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content"  *ngIf="showseis" cdkDrag>
+            <div class="content-add">
+                <div class="content-form">
+                    <form action="">
+                        <p class="block">
+                            <label for="pregunta">Cree pregunta</label>
+                            <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                        </p>
+    
+                        <p class="block">
+                            <input type="text" name="tel" id="pregunta" placeholder="Respuesta">
+                        </p>
+                    </form>
+                </div>
+                <div class="content-button">
+                    <a  id="agregar">
+                        <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showsiete=true">
+                    </a>
+    
+                    <a id="delete">
+                        <img class="icon-content" src="assets/images/delete.png" alt="Eliminar" (click)="showseis=false">
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content"  *ngIf="showsiete" cdkDrag>
+            <div class="content-add">
+                <div class="content-form">
+                    <form action="">
+                        <p class="block">
+                            <label for="pregunta">Cree pregunta</label>
+                            <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                        </p>
+    
+                        <p class="block">
+                            <input type="text" name="tel" id="pregunta" placeholder="Respuesta">
+                        </p>
+                    </form>
+                </div>
+                <div class="content-button">
+                    <a  id="agregar">
+                        <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showocho=true">
+                    </a>
+    
+                    <a id="delete">
+                        <img class="icon-content" src="assets/images/delete.png" alt="Eliminar" (click)="showsiete=false">
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content"  *ngIf="showocho" cdkDrag>
+            <div class="content-add">
+                <div class="content-form">
+                    <form action="">
+                        <p class="block">
+                            <label for="pregunta">Cree pregunta</label>
+                            <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                        </p>
+    
+                        <p class="block">
+                            <input type="text" name="tel" id="pregunta" placeholder="Respuesta">
+                        </p>
+                    </form>
+                </div>
+                <div class="content-button">
+                    <a  id="agregar">
+                        <img class="icon-content" src="assets/images/add.png" alt="agregar" >
+                    </a>
+    
+                    <a id="delete">
+                        <img class="icon-content" src="assets/images/delete.png" alt="Eliminar" (click)="showocho=false">
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!--Formulario de ID-->
+    <div class="content" *ngIf="showid" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta" >
+                    </p>
+
+                    <p>
+                        <label for="pregunta">ID</label>
+                        <input type="text" name="tel" id="pregunta">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                <a  id="agregar">
+                    <img class="icon-content" src="assets/images/add.png" alt="agregarid" (click)="showid2=true" (click)="btnon6=false" >
+                </a>
+
+                <a  id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showid=false">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" *ngIf="showid2" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <input type="text" name="pregunta" id="pregunta"placeholder="Ingrese su pregunta" >
+                    </p>
+
+                    <p>
+                        <label for="pregunta">ID</label>
+                        <input type="text" name="tel" id="pregunta">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                <a id="agregar">
+                    <img class="icon-content" src="assets/images/add.png" alt="agregarid"  (click)="showid3=true">
+                </a>
+
+                <a id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="" (click)="showid2=false">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" *ngIf="showid3" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <input type="text" name="pregunta" id="pregunta"placeholder="Ingrese su pregunta" >
+                    </p>
+
+                    <p>
+                        <label for="pregunta">ID</label>
+                        <input type="text" name="tel" id="pregunta">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                <a id="agregar">
+                    <img class="icon-content" src="assets/images/add.png" alt="agregarid" >
+                </a>
+
+                <a id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showid3=false">
+                </a>
             </div>
         </div>
     </div>
            
+     <!--Formulario de Email-->
+     <div class="content" *ngIf="showemail" cdkDrag  >
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="pregunta">Edite pregunta</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                    </p>
+
+                    <p>
+                        <label for="pregunta">Correo</label>
+                        <input type="email" name="tel" id="pregunta" placeholder="ejemplo@ejemplo.com">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                <a id="agregar">
+                    <img class="icon-content" src="assets/images/add.png" alt="agregarpregunta" (click)="showemail2=true" >
+                </a>
+
+                <a  id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showemail=false">
+
+                </a>
+            </div>
+        </div>
+    </div>  
+
+    <div class="content" *ngIf="showemail2" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="pregunta">Edite pregunta</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                    </p>
+
+                    <p>
+                        <label for="pregunta">Correo</label>
+                        <input type="email" name="tel" id="pregunta" placeholder="ejemplo@ejemplo.com">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                <a id="agregar">
+                    <img class="icon-content" src="assets/images/add.png" alt="agregarpregunta" (click)="showemail3=true">
+                </a>
+
+                <a  id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showemail2=false" >
+
+                </a>
+            </div>
+        </div>
+    </div>  
+
+    <div class="content" *ngIf="showemail3" cdkDrag>
+        <div class="content-add">
+            <div class="content-form">
+                <form action="">
+                    <p class="block">
+                        <label for="pregunta">Edite pregunta</label>
+                        <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su pregunta">
+                    </p>
+
+                    <p>
+                        <label for="pregunta">Correo</label>
+                        <input type="email" name="tel" id="pregunta" placeholder="ejemplo@ejemplo.com">
+                    </p>
+                </form>
+            </div>
+            <div class="content-button">
+                <a id="agregar">
+                    <img class="icon-content" src="assets/images/add.png" alt="agregarpregunta" >
+                </a>
+
+                <a  id="delete">
+                    <img class="icon-content" src="assets/images/delete.png" alt="" (click)="showemail3=false">
+
+                </a>
+            </div>
+        </div>
+    </div>  
     
             <!--Formularios para boton de celular-->
-            <div class="content" *ngIf="showcuatro">
+            <div class="content" *ngIf="showtel" cdkDrag>
                 <div class="content-add">
                     <div class="content-form">
                         <form action="">
@@ -82,97 +451,76 @@
                         </form>
                     </div>
                     <div class="content-button">
-                        <a href="#" id="agregar">
-                            <img class="icon-content" src="src/add.png" alt="">
+                        <a  id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showtel2=true">
                         </a>
         
-                        <a href="#" id="delete">
-                            <img class="icon-content" src="src/delete.png" alt="">
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showtel=false">
         
-                        </a>
-                    </div>
-                </div>
-            </div>
-    
-            <!--Formulario de ID-->
-            <div class="content" *ngIf="showdos">
-                <div class="content-add">
-                    <div class="content-form">
-                        <form action="">
-                            <p class="block">
-                                <input type="text" name="pregunta" id="pregunta" >
-                            </p>
-        
-                            <p>
-                                <label for="pregunta">ID</label>
-                                <input type="text" name="tel" id="pregunta">
-                            </p>
-                        </form>
-                    </div>
-                    <div class="content-button">
-                        <a href="#" id="agregar">
-                            <img class="icon-content" src="src/add.png" alt="">
-                        </a>
-        
-                        <a href="#" id="delete">
-                            <img class="icon-content" src="src/delete.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
     
-            <!--Formulario de Email-->
-            <div class="content" *ngIf="showtres">
+            <div class="content" *ngIf="showtel2" cdkDrag>
                 <div class="content-add">
                     <div class="content-form">
                         <form action="">
                             <p class="block">
-                                <label for="pregunta">Edite pregunta</label>
-                                <input type="text" name="pregunta" id="pregunta">
+                                
+                                <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su número de contacto">
                             </p>
         
                             <p>
-                                <label for="pregunta">Correo</label>
+                                <label for="pregunta">Telefono</label>
+                                <input type="text" name="tel" id="pregunta">
+                            </p>
+                            <p>
+                                <label for="pregunta">Celular</label>
                                 <input type="text" name="tel" id="pregunta">
                             </p>
                         </form>
                     </div>
                     <div class="content-button">
-                        <a href="#" id="agregar">
-                            <img class="icon-content" src="src/add.png" alt="">
+                        <a  id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showtel3=true">
                         </a>
         
-                        <a href="#" id="delete">
-                            <img class="icon-content" src="src/delete.png" alt="">
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showtel2=false">
         
                         </a>
                     </div>
                 </div>
-            </div>  
-    
-            <!--Formulario para agregar calendario-->
-            <div class="content">
+            </div>
+
+            <div class="content" *ngIf="showtel3" cdkDrag>
                 <div class="content-add">
                     <div class="content-form">
                         <form action="">
                             <p class="block">
-                                <label for="pregunta">Edite pregunta</label>
-                                <input type="text" name="pregunta" id="pregunta">
+                                
+                                <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese su número de contacto">
                             </p>
         
                             <p>
-                                <label for="pregunta">Calendario</label>
+                                <label for="pregunta">Telefono</label>
+                                <input type="text" name="tel" id="pregunta">
+                            </p>
+                            <p>
+                                <label for="pregunta">Celular</label>
                                 <input type="text" name="tel" id="pregunta">
                             </p>
                         </form>
                     </div>
                     <div class="content-button">
-                        <a href="#" id="agregar">
-                            <img class="icon-content" src="src/add.png" alt="">
+                        <a  id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" >
                         </a>
         
-                        <a href="#" id="delete">
-                            <img class="icon-content" src="src/delete.png" alt="">
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showtel3=false">
         
                         </a>
                     </div>
@@ -180,7 +528,7 @@
             </div>
         
             <!--Formulario para agregar imagen-->
-            <div class="content">
+            <div class="content"  *ngIf="showimage" cdkDrag>
                 <div class="content-add">
                     <div class="content-form">
                         <form action="">
@@ -195,12 +543,66 @@
                         </form>
                     </div>
                     <div class="content-button">
-                        <a href="#" id="agregar">
-                            <img class="icon-content" src="src/add.png" alt="">
+                        <a id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showimage2=true" >
                         </a>
         
-                        <a href="#" id="delete">
-                            <img class="icon-content" src="src/delete.png" alt="">
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar"  (click)="showimage=false">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content"  *ngIf="showimage2" cdkDrag>
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="pregunta">Seleccione una imagen que desea agregar</label>
+                            </p>
+        
+                            <p>
+                                <label for="pregunta">Imagen</label>
+                                <angular-file-uploader [config]="afuConfig"></angular-file-uploader>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showimage3=true" >
+                        </a>
+        
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar"  (click)="showimage2=false">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content"  *ngIf="showimage3" cdkDrag>
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="pregunta">Seleccione una imagen que desea agregar</label>
+                            </p>
+        
+                            <p>
+                                <label for="pregunta">Imagen</label>
+                                <angular-file-uploader [config]="afuConfig"></angular-file-uploader>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" >
+                        </a>
+        
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar"  (click)="showimage3=false">
         
                         </a>
                     </div>
@@ -208,30 +610,170 @@
             </div>
         
             <!--Formularios para Opcion Multiple-->
-            <div class="content">
+            <div class="content" *ngIf="showmultiple" cdkDrag>
                 <div class="content-add">
                     <div class="content-form">
                         <form action="">
                             <p class="block">
-                                <label for="pregunta">Edite pregunta</label>
-                                <input type="text" name="pregunta" id="pregunta">
-                            </p>
-        
-                            <p>
-                                <label for="pregunta">Opcion multiple</label>
-                                <input type="text" name="tel" id="pregunta">
+                                <label for="">Pregunta </label>
+                                <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                                <br>
+                                <br>
+                                <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 1"> <br>
+                                <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 2"><br>
+                                <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 3"><br>
+                                <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 4">
                             </p>
                         </form>
                     </div>
                     <div class="content-button">
-                        <a href="#" id="agregar">
-                            <img class="icon-content" src="src/add.png" alt="">
+                        <a id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showmultiple2=true" >
                         </a>
-        
-                        <a href="#" id="delete">
-                            <img class="icon-content" src="src/delete.png" alt="">
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showmultiple=false">
         
                         </a>
                     </div>
                 </div>
             </div>
+            <div class="content" *ngIf="showmultiple2"cdkDrag>
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="">Pregunta </label>
+                                <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                                <br>
+                                <br>
+                                <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 1"> <br>
+                                <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 2"><br>
+                                <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 3"><br>
+                                <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 4">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showmultiple3=true" >
+                        </a>
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showmultiple2=false">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" *ngIf="showmultiple3" cdkDrag>
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="">Pregunta </label>
+                                <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                                <br>
+                                <br>
+                                <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 1"> <br>
+                                <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 2"><br>
+                                <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 3"><br>
+                                <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 4">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showmultiple4=true" >
+                        </a>
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showmultiple3=false">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" *ngIf="showmultiple4" cdkDrag>
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="">Pregunta </label>
+                                <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                                <br>
+                                <br>
+                                <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 1"> <br>
+                                <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 2"><br>
+                                <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 3"><br>
+                                <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 4">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar" (click)="showmultiple5=true" >
+                        </a>
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showmultiple4=false">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" *ngIf="showmultiple5" cdkDrag>
+                <div class="content-add">
+                    <div class="content-form">
+                        <form action="">
+                            <p class="block">
+                                <label for="">Pregunta </label>
+                                <input type="text" name="pregunta" id="pregunta" placeholder="Ingrese pregunta">
+                                <br>
+                                <br>
+                                <input id="rb" type="radio" value="first_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 1"> <br>
+                                <input id="rb" type="radio" value="second_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 2"><br>
+                                <input id="rb" type="radio" value="third_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 3"><br>
+                                <input id="rb" type="radio" value="fourth_rb"> <input type="text" id="opc"
+                                    placeholder="Opcion 4">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="content-button">
+                        <a id="agregar">
+                            <img class="icon-content" src="assets/images/add.png" alt="agregar"  >
+                        </a>
+                        <a  id="delete">
+                            <img class="icon-content" src="assets/images/delete.png" alt="eliminar" (click)="showmultiple5=false">
+        
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="page-footer">
+                    <div class="footer-copyright text-center py-3" style="color:whitesmoke;">© 2020 Copyright
+                        <a href="http://www.udb.edu.sv/udb/" style="color: #21A179;"> Universidad Don Bosco</a>
+                    </div >
+                </div> 
+            
+            </footer>
